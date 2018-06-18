@@ -1,1 +1,5 @@
-maybe there is a bug
+<<<<<<< HEAD
+1234
+=======
+ABCD
+>>>>>>> bugFix
