@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen.MainActivity"
+    android:background="@drawable/main_background"
+    android:layout_centerVertical="true"
+
+    >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        >
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/mDotLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slideViewPager"
+        android:layout_marginLeft="175dp"
+        android:orientation="horizontal"
+
+        android:padding="30dp"></LinearLayout>
+
+
+    <Button
+        android:id="@+id/btp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:background="@android:color/transparent"
+        android:text="Previous"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:clickable="true"
+        />
+    <Button
+        android:id="@+id/bts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="Access"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:clickable="true"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

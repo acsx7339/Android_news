@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirebaseAccount.Reset"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:id="@+id/activity_forgot"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/activity_login"
+        android:id="@+id/icon"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_message"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="enter your email to reset your password"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_message"
+        android:id="@+id/forgot_email"
+        android:hint="enter your email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_email"
+        android:id="@+id/forgot_btn_reset"
+        android:text="Reset"
+        android:background="#263238"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_btn_back"
+        android:layout_below="@id/forgot_btn_reset"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
